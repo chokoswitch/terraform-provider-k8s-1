@@ -2,6 +2,8 @@ package k8s
 
 import (
 	"github.com/hashicorp/terraform/helper/schema"
+
+        _ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 )
 
 func Provider() *schema.Provider {
